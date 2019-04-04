@@ -46,6 +46,7 @@ func (preview PreviewGenerator) generateRaster(w, h uint, assets metaAssets, rep
 	var img = image.NewRGBA(rect)
 	var printer = freetype.NewContext()
 	printer.SetDst(img)
+	// TODO(ninedraft): add preview generation
 	return img
 }
 
